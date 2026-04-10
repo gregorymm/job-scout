@@ -2,6 +2,8 @@
 
 Personalized job search agent for Claude Code. Scrapes your CV/portfolio, searches Google + LinkedIn (via Apify), scores roles against your profile, returns a ranked table of best-fit opportunities, and generates ATS-optimized tailored CVs for selected positions.
 
+![Job Scout demo](demo.gif)
+
 ## Installation
 
 ### Claude Code (CLI / Desktop App)
