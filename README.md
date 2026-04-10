@@ -23,6 +23,32 @@ cd your-project
 git clone https://github.com/gregorymm/job-scout.git .claude/skills/job-scout
 ```
 
+### Claude.ai (Web / Mobile)
+
+You can use Job Scout in Claude AI by adding the skill as project instructions:
+
+1. Go to [claude.ai](https://claude.ai) and create a new **Project**
+2. Open **Project Settings** → **Custom Instructions**
+3. Copy the entire contents of [`SKILL.md`](SKILL.md) and paste it into the instructions field
+4. Optionally, upload your CV/resume as a project file — Claude will use it as the profile source
+5. Start a conversation in the project and say **"find jobs"** or **"job scout"**
+
+**What works in Claude.ai:**
+- Full onboarding conversation flow
+- Web search for job postings (built-in)
+- Scoring and ranked table output
+- CV tailoring with ATS best practices
+- All the "never fabricate" safety rules
+
+**What's different vs Claude Code:**
+- No Apify/LinkedIn scraping (no MCP support) — relies on web search only
+- No persistent profile file (re-provide CV each session, or keep it as a project file)
+- No `AskUserQuestion` multiple-choice UI — uses regular chat instead
+- No `TodoWrite` progress tracking — shows progress in conversation
+
+> **Tip:** Upload your CV as a project file and add this line at the top of custom instructions:
+> `The user's CV is attached as a project file. Use it as the candidate profile.`
+
 ### Verify Installation
 
 Open Claude Code and type `/job-scout` — you should see it in the skill list. Or just say "find jobs".
